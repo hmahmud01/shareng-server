@@ -1,0 +1,205 @@
+
+{% extends 'base_dashboard.html' %}
+{% load static %}
+
+{% block content %}
+<!-- Home Page Section -->
+<section class="main-section">
+    <div class="admin-section-top">
+        <div>
+            <div class="uk-section-secondary uk-preserve-color">
+                <div uk-sticky>
+                    <nav class="uk-navbar-container uk-nav-color" uk-navbar="mode: click;">
+                        <div class="uk-navbar-left">
+                            <a class="uk-navbar-item uk-logo logo-size uk-text-emphasis" href="dashboard.html">Shareng.biz</a>    
+                        </div>
+                        <div class="uk-navbar-right">
+                            <ul class="uk-navbar-nav uk-iconnav">
+                                <li>
+                                    <a class="active uk-text-emphasis" uk-toggle><span class="uk-margin-small-right" uk-icon="icon: user"></span> User </a>
+                                    <div class="uk-navbar-dropdown">
+                                        <ul class="uk-nav uk-navbar-dropdown-nav uk-text-right">
+                                            <li class="uk-active"><a href="#">Active</a></li>
+                                            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: user"></span> Logout</a></li>
+                                        </ul>
+                                    </div>
+                                </li>                              
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+        </div>
+    </div>        
+</section>
+
+<div uk-grid>
+    <div class="uk-width-1-6@s">
+        <div class="uk-card uk-card-secondary uk-card-body shareng-sidebar-left">                
+            <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+                <li class="uk-nav-header">Dashboard Navigation</li>
+                <li class="uk-parent">
+                    <a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Item</a>
+                    <ul class="uk-nav-sub">
+                        <li><a href="#">Sub item</a></li>
+                        <li><a href="#">Sub item</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Item</a></li>
+                <li class="uk-nav-divider"></li>
+                <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: trash"></span> Item</a></li>
+            </ul>
+            <div class="uk-position-bottom uk-padding-small">                    
+                Copyright @ Shareng.biz
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="uk-width-expand@s">
+        <div class="uk-padding">
+            <div id="case_description">
+                <div class="uk-child-width-1@m uk-margin" uk-grid>
+                    <div>
+                        <div class="uk-card uk-card-hover uk-card-body" uk-scrollspy="cls: uk-animation-slide-top;">
+                            <h3 class="uk-card-title">Tiket Information</h3>
+                            <dl class="uk-description-list uk-description-list">
+                                <dt>Ticket No</dt>
+                                <dd class="uk-text-large">astral - 001</dd>
+                                <dt>Ticket Type</dt>
+                                <dd>Technical.</dd>
+                                <dt>Ticket Type Category</dt>
+                                <dd>Web Site Issue.</dd>
+
+                                <dt>Ticket Detail</dt>
+                                <dd>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum eaque amet quibusdam, nisi, nulla mollitia cupiditate facilis nemo magni odio minima est corporis rem neque unde earum iure itaque necessitatibus?</dd>
+                               
+                                <dt>Ticket Issue Date</dt>
+                                <dd>12-12-12</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-child-width-1@m uk-margin" uk-grid>
+                    <div class="uk-width-2-3@m">
+                        <div class="uk-card uk-card-hover uk-card-body" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+                            <h3 class="uk-card-title">User Information</h3>
+                            <dl class="uk-description-list uk-description-list-divider">
+                                <dt>User Name</dt>
+                                <dd>Name Of the User.</dd>
+                                <dt>User's Phone Number</dt>
+                                <dd>#000012120</dd>
+                                <dt>User's Email Address</dt>
+                                <dd>name@user.com</dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="uk-width-expand@m">
+                        <div class="uk-card uk-card-hover uk-card-body" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
+                            <h3 class="uk-card-title">Necessary Documents For this Ticket</h3>
+                            <table class="uk-table uk-table-middle uk-table-divider">
+                                <thead>
+                                    <tr>
+                                        <th class="uk-width-small">Uploaded Date</th>
+                                        <th>Document</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Table Data</td>
+                                        <td>Table Data</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Table Data</td>
+                                        <td>Table Data</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="uk-card uk-card-hover uk-card-body" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
+                            <h3 class="uk-card-title">Ticket Progress</h3>
+                            <progress id="js-progressbar" class="uk-progress" value="33" max="100"></progress>
+                            <span class="uk-badge badge-not-picked">Not Picked Up Yet</span>
+                            <a href="btn btn-link-text">Pick up</a>
+                        </div>
+                        <div class="uk-card uk-card-hover uk-card-body" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
+                            <h3 class="uk-card-title">Ticket Progress</h3>
+                            <progress id="js-progressbar" class="uk-progress progress-development" value="66" max="100"></progress>
+                            <span class="uk-badge badge-development">Under Development</span>
+                            <p>Picked up By: Hasan Mahmud</p>
+                        </div>
+                        <div class="uk-card uk-card-hover uk-card-body" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
+                            <h3 class="uk-card-title">Ticket Progress</h3>
+                            <progress id="js-progressbar" class="uk-progress progress-completed" value="100" max="100"></progress>
+                            <span class="uk-badge badge-completed">Completed</span>
+                            <p>Completed By up By: Hasan Mahmud</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-child-width-1@m uk-margin" uk-grid>
+                    <div>
+                        <div class="uk-card uk-card-hover uk-card-body" uk-scrollspy="cls: uk-animation-slide-bottom; repeat: true">
+                            <h3 class="uk-card-title">Payment History</h3>
+                            <p>Make a new <a class="uk-button uk-button-secondary uk-button-small" uk-tooltip="Create A new Payment for the rest of the due" href="#payment" uk-toggle>Payment</a></p>
+                            <table class="uk-table uk-table-middle uk-table-divider">
+                                <thead>
+                                    <tr>
+                                        <th class="uk-width-small">Paid For</th>
+                                        <th>Description</th>
+                                        <th>Amount Paid</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Table Data</td>
+                                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                                        <td>Table Data</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Table Data</td>
+                                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                                        <td>Table Data</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>    
+                <div id="payment" uk-modal>
+                    <div class="uk-modal-dialog uk-margin-auto-vertical">
+                        <button class="uk-modal-close-default " type="button" uk-close></button>
+                        <div class="uk-modal-header">
+                            <h2 class="uk-modal-title">Make Payment for the Ticket </h2>
+                        </div>
+                        <form class="uk-form-stacked">
+                            <div class="uk-modal-body">
+                                <p>Ticket Number: ####</p>
+                                <p>Amount Due: $$$$$$</p>
+                                <div class="uk-margin">
+                                    <label class="uk-form-label" for="amount_paid">Paid Amount</label>
+                                    <div class="uk-form-controls">
+                                        <input class="uk-input" id="amount_paid" type="text" name="amount_paid" placeholder="Paid Amount">
+                                    </div>
+                                </div>
+                            
+                                <div class="uk-margin">
+                                    <label class="uk-form-label" for="payment_description">Description</label>
+                                    <div class="uk-form-controls">
+                                        <textarea class="uk-textarea" rows="5" id="payment_description" type="text" name="payment_description" placeholder="Description"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="uk-modal-footer uk-text-right">
+                                <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+                                <button class="uk-button uk-button-primary" type="button">Save to History</button>
+                            </div>   
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

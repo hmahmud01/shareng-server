@@ -1,0 +1,116 @@
+
+    {% extends 'base_dashboard.html' %}
+    {% load static %}
+
+    {% block content %}
+    <!-- Home Page Section -->
+    <section class="main-section">
+        <div class="admin-section-top">
+            <div>
+                <div class="uk-section-secondary uk-preserve-color">
+                    <div uk-sticky>
+                        <nav class="uk-navbar-container uk-nav-color" uk-navbar="mode: click;">
+                            <div class="uk-navbar-left">
+                                <a class="uk-navbar-item uk-logo logo-size uk-text-emphasis" href="dashboard.html">Shareng.biz</a>    
+                            </div>
+                            <div class="uk-navbar-right">
+                                <ul class="uk-navbar-nav uk-iconnav">
+                                    <li>
+                                        <a class="active uk-text-emphasis" uk-toggle><span class="uk-margin-small-right" uk-icon="icon: user"></span> User </a>
+                                        <div class="uk-navbar-dropdown">
+                                            <ul class="uk-nav uk-navbar-dropdown-nav uk-text-right">
+                                                <li class="uk-active"><a href="#">Active</a></li>
+                                                <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: user"></span> Logout</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>                              
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+
+            </div>
+        </div>        
+    </section>
+
+    <div uk-grid>
+        <div class="uk-width-1-6@s">
+            <div class="uk-card uk-card-secondary uk-card-body shareng-sidebar-left">                
+                <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+                    <li class="uk-nav-header">Dashboard Navigation</li>
+                    <li class="uk-parent">
+                        <a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Item</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="#">Sub item</a></li>
+                            <li><a href="#">Sub item</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Item</a></li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: trash"></span> Item</a></li>
+                </ul>
+                <div class="uk-position-bottom uk-padding-small">                    
+                    Copyright @ Shareng.biz
+                </div>
+            </div>
+        </div>
+        
+    
+        <div class="uk-width-expand@s">
+            <div class="uk-padding">
+
+                <div class="uk-card uk-card-default uk-card-body uk-card-hover">
+                    <div class="uk-card uk-card-secondary uk-card-hover uk-card-body">
+                        <h3 class="uk-card-title">List Of All Tickets</h3>
+                    </div>
+                    <table class="uk-table uk-table-justify uk-table-divider">
+                        <thead>
+                            <tr>
+                                <th class="uk-width-small">Ticket Id</th>
+                                <th>Phone Number</th>
+                                <th>Detail</th>
+                                <th>Operation</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="detail.html">astral-01</a></td>
+                                <td>017###########</td>
+                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                                <td><button class="uk-button uk-button-default" type="button">Payment</button></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">astral-02</a></td>
+                                <td>017###########</td>
+                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                                <td><button class="uk-button uk-button-default" type="button">Payment</button></td>
+                            </tr>
+                            <tr>
+                                <td><a href="detail.html">astral-01</a></td>
+                                <td>017###########</td>
+                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                                <td><button class="uk-button uk-button-default" type="button">Payment</button></td>
+                            </tr>
+                            <tr>
+                                <td><a href="detail.html">astral-02</a></td>
+                                <td>017###########</td>
+                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                                <td><button class="uk-button uk-button-default" type="button">Payment</button></td>
+                            </tr>
+                            <tr>
+                                <td><a href="detail.html">astral-01</a></td>
+                                <td>017###########</td>
+                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                                <td><button class="uk-button uk-button-default" type="button">Payment</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    {% endblock %}
+
